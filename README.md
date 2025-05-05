@@ -2,7 +2,7 @@
 
 #### In-Memory Encrypted Mimikatz Loader
 
-Memkatz is a lightweight tool that embeds an encrypted `mimikatz.exe` in its PE resource section, decrypts it in memory at runtime, and launches it after a small delay to evade memory scanners.
+Memkatz is a post-exploitation tool that embeds an encrypted `mimikatz.exe` in its PE resource section, decrypts it in memory at runtime, and launches it after a small delay to evade memory scanners.
 
 ---
 
@@ -24,7 +24,7 @@ Memkatz.exe [MimikatzCommand]
 [![memkatz.png](https://i.postimg.cc/qBjffypN/memkatz.png)](https://postimg.cc/ThLNgyLx)
 
 
-Execution delay can be adjusted (in milliseconds) via the `g_DelayTime` global variable. 
+Execution delay can be set (in milliseconds) via the `g_DelayTime` global variable. 
 
 Verbose output can be enabled by setting `g_Verbose` to `TRUE`. 
 
