@@ -1,5 +1,7 @@
 # Memkatz
 
+[![memkatz-logo.png](https://i.postimg.cc/RF5T6WRw/memkatz-logo.png)](https://postimg.cc/bGgn4N4v)
+
 #### In-Memory Encrypted Mimikatz Loader
 
 Memkatz is a post-exploitation tool that embeds an encrypted `mimikatz.exe` in its PE resource section, decrypts it in memory at runtime, and launches it after a small delay to evade memory scanners.
