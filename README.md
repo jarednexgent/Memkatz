@@ -25,12 +25,17 @@ Memkatz.exe [MimikatzCommand]
 
 [![memkatz.png](https://i.postimg.cc/qBjffypN/memkatz.png)](https://postimg.cc/ThLNgyLx)
 
+---
 
-Execution delay can be set (in milliseconds) via the `g_DelayTime` global variable. 
+### Configuration
 
-Verbose output can be enabled by setting `g_Verbose` to `TRUE`. 
+Before building, you can tune Memkatz's behavior by editing the globals at the top of `main.c`.
 
-Banner printing can be disabled by setting `g_PrintBanner` to `FALSE`.
+```c
+DWORD g_DelayTime = 5000; // Execution delay in milliseconds
+BOOL g_Verbose = FALSE; // Set to TRUE to enable verbose output
+BOOL g_PrintBanner = TRUE; // Set to FALSE to disable the banner
+```
 
 ---
 
