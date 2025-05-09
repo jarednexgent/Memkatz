@@ -42,13 +42,15 @@ BOOL g_PrintBanner = TRUE; // Set to FALSE to disable the banner
 ### Build
 
 **Visual Studio**  
-1. Open `memkatz.sln` in Visual Studio  
+1. Open `Kazaamsi.sln` in Visual Studio  
 2. Set **Configuration** to `Release` and **Platform** to `x64`  
-3. Project Properties → C/C++ → Code Generation  
-   - Runtime Library: Multi-threaded (/MT)  
-   - Enable C++ Exceptions: No  
-4. C/C++ → Optimization → Whole Program Optimization: No  
-5. Linker → Debugging → Generate Debug Info: No  
-6. Linker → Manifest → Generate Manifest: No  
-7. Build the solution
+3. Go to **Project → Properties** and configure:  
+   - **C/C++ → Code Generation**  
+     - Runtime Library: Multi-threaded (/MT)  
+     - Enable C++ Exceptions: No  
+   - **C/C++ → Optimization → Whole Program Optimization:** No  
+   - **Linker → Debugging → Generate Debug Info:** No  
+   - **Linker → Manifest → Generate Manifest:** No  
+4. Build the solution.
+
 ---
