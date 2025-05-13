@@ -2,9 +2,9 @@
 
 [![memkatz-logo.png](https://i.postimg.cc/RF5T6WRw/memkatz-logo.png)](https://postimg.cc/bGgn4N4v)
 
-#### In-Memory Encrypted Mimikatz Loader
+#### Encrypted Reflective Mimikatz Loader
 
-Memkatz is a post-exploitation tool that embeds an encrypted `mimikatz.exe` in its PE resource section, decrypts it in memory at runtime, and launches it after a small delay to evade memory scanners.
+Memkatz is a post-exploitation tool that embeds an encrypted `mimikatz.exe` binary in its PE resource section. At runtime, it decrypts and reflectively loads the payload into memory, launching it after a short delay to evade memory scanners.
 
 ---
 
@@ -42,7 +42,7 @@ BOOL g_PrintBanner = TRUE; // Set to FALSE to disable the banner
 ### Build
 
 **Visual Studio**  
-1. Open `Kazaamsi.sln` in Visual Studio  
+1. Open `memkatz.sln` in Visual Studio  
 2. Set **Configuration** to `Release` and **Platform** to `x64`  
 3. Go to **Project → Properties** and configure:  
    - **C/C++ → Code Generation**  
