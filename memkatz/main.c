@@ -5,7 +5,7 @@
 
 DWORD	g_DelayTime			=	5000;		// Wait five seconds before executing
 BOOL	g_Verbose			=	FALSE,		// TRUE = verbose output (use for debugging)
-		g_PrintBanner		=	TRUE;		// TRUE = print banner
+BOOL	g_PrintBanner 			= 	TRUE; 		// TRUE = print banner
 
 VOID PrintBanner(VOID) {
 
